@@ -1,18 +1,67 @@
-const coment1 = "Вонючая мышь гуляет целыми днями и не хочеть учиться, устроила вонючку и беее.";
+// (function(){
+//     console.log("Привет мир");
+// }());
 
-const slovo = ["Вонючая","вонючку"];
+// // function hello(){
+// //     console.log("Hello");
+// // }
+// // hello();    // вызываем функцию
 
-const coment2 = "Мышь – это невероятное создание, которое выглядит довольно скромно, но на самом деле имеет огромное значение как в природе, так и в нашей жизни. Эти маленькие грызуны обладают удивительной способностью адаптироваться к самым различным условиям, что делает их одними из самых распространенных млекопитающих на планете. В экосистеме они выполняют важные функции: становятся пищей для хищников и помогают в контроле за семенами и растительностью.";
+// // const hello = ()=> console.log("Hello");
+// // hello();
 
-function chek(zapret, coment) {
-for (let rek of zapret) {
-    coment.includes(rek)
-    if (coment.includes(rek)) {
-       coment = coment.replaceAll(rek, "***");
-    }
-    
-}
-return coment; 
-}
-console.log(chek(slovo,coment2));
-console.log(chek(slovo,coment1));
+// // const hello = name => `Hello, ${name}`;
+ 
+// // console.log(hello("Tom"));              // Hello, Tom
+// // console.log(hello("Bob"));              // Hello, Bob
+// // console.log(hello("Frodo Baggins"));    // Hello, Frodo Baggins
+
+
+// // const square = (n, g) => {
+// //     const result = n * n + g;
+// //     console.log(result);
+// // }
+  
+// // square(5,2);     // 25
+// // square(6,3);   
+// //   // 36
+
+// // let square2 = (n, g) => {
+// //     const result = n * n + g;
+// //     console.log(result);
+// // }
+
+
+// // console.log(
+// //     ((x,y) => (
+// //         ((proc2) =>(
+// //             ((proc1)=>proc1(5,30))((x,y) => [x, proc2(), y])
+// //         ))(()=>x + y)
+// //     ))(10, 15)
+// // );      // [5, 25, 30]
+// console.log(this);
+// console.log(globalThis);
+
+// let gig = 1;
+// console.log(gig);
+// {
+//     let gig = 2;
+//     console.log(this.gig);
+//     {
+//         let gig = 3;
+//         console.log(gig);
+//     }
+// }
+// (function gette() {
+//     var gig = 5;
+//     console.log(this.gig);
+// })()
+// console.log(gig);
+// // window.alert("привет Мышь");
+// // window.print("Привет мышам");
+// window.open("https://metanit.com", "_blank", "popup=yes");
+
+
+document.addEventListener('click', (event) => {
+    console.log(event); // Выводим объект события в консоль
+});

@@ -9,3 +9,38 @@
     <script src="main.js"></script>
 </body>
 </html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <form id="search" name="search" action="" method="POST" onsubmit="event.preventDefault(); validateMyForm();">
+        <input type="text"   name="phone" />
+        <input type="submit" value="Кнопка"  name="send" />
+    </form>
+    <script>
+    const form = document.getElementById("search");
+    console.log(form.elements["send"].value);     // HTMLFormControlsCollection(2) [input, input, q: input, send: input]
+    console.log(form.length);       // 2
+    console.log(form.name);         // search
+    console.log(form.action);       // https://google.com/search
+    console.log(form.method);       // get
+    function chek() {
+        const reg = /\+?[7-8]-?\d{3}-?\d{3}-?\d{2}-?\d{2}/;
+        if(reg.test(form.elements["phone"].value)) {
+            form.elements["send"].value = "otpravili nahyi";
+        }
+        else {
+            form.elements["send"].value = "hyi";
+        }
+        console.log("checkk");
+
+        
+    };
+    form.element["send"] = addEventListener("click", chek);
+
+    </script>
+</body>
+</html> -->
